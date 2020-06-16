@@ -9,7 +9,7 @@
     </div>
 
     <main class="card content-wrap">
-        <h1 class="break-text">{{$shelf->name}}</h1>
+        <h4 class="break-text">{{$shelf->name}}</h4>
         <div class="book-content">
             <p class="text-muted">{!! nl2br(e($shelf->description)) !!}</p>
             @if(count($shelf->visibleBooks) > 0)

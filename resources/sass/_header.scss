@@ -242,8 +242,10 @@ header .search-box {
   opacity: 0.7;
   .icon-list-item {
     width: auto;
-    padding-top: $-xs;
-    padding-bottom: $-xs;
+    padding: $-xs 0 $-xs 0;
+    span:first-child{
+      margin-right: $-xs;
+    }
   }
   .separator {
     display: inline-block;
@@ -272,7 +274,7 @@ header .search-box {
 .breadcrumb-listing {
   position: relative;
   .breadcrumb-listing-toggle {
-    padding: 6px;
+    padding: 2px $-xxs 0;
     border: 1px solid transparent;
     border-radius: 4px;
     &:hover {

@@ -15,7 +15,7 @@
     </div>
 
     <main class="content-wrap card">
-        <h1 class="break-text" v-pre>{{$book->name}}</h1>
+        <h4 class="break-text" v-pre>{{$book->name}}</h4>
         <div class="book-content" v-show="!searching">
             <p class="text-muted" v-pre>{!! nl2br(e($book->description)) !!}</p>
             @if(count($bookChildren) > 0)

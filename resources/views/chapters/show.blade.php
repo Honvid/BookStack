@@ -16,7 +16,7 @@
     </div>
 
     <main class="content-wrap card">
-        <h1 class="break-text" v-pre>{{ $chapter->name }}</h1>
+        <h4 class="break-text" v-pre>{{ $chapter->name }}</h4>
         <div class="chapter-content" v-show="!searching">
             <p v-pre class="text-muted break-text">{!! nl2br(e($chapter->description)) !!}</p>
             @if(count($pages) > 0)
