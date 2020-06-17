@@ -27,6 +27,8 @@ return [
     'app_secure_images_desc' => 'For performance reasons, all images are public. This option adds a random, hard-to-guess string in front of image urls. Ensure directory indexes are not enabled to prevent easy access.',
     'app_editor' => 'Page Editor',
     'app_editor_desc' => 'Select which editor will be used by all users to edit pages.',
+    'user_editor' => 'Page Editor',
+    'user_editor_desc' => 'Select which editor will be used by current users to edit pages.',
     'app_custom_html' => 'Custom HTML Head Content',
     'app_custom_html_desc' => 'Any content added here will be inserted into the bottom of the <head> section of every page. This is handy for overriding styles or adding analytics code.',
     'app_custom_html_disabled_notice' => 'Custom HTML head content is disabled on this settings page to ensure any breaking changes can be reverted.',

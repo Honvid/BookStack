@@ -7,11 +7,7 @@
         <div class="py-m">
             @include('settings.navbar', ['selected' => 'maintenance'])
         </div>
-        <div class="text-right p-m">
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/BookStackApp/BookStack/releases">
-            BookStack @if(strpos($version, 'v') !== 0) version @endif {{ $version }}
-            </a>
-        </div>
+        <div class="text-right p-m"></div>
     </div>
 
     <div id="image-cleanup" class="card content-wrap auto-height">

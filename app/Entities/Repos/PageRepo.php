@@ -187,7 +187,7 @@ class PageRepo
         // Update with new details
         $page->revision_count++;
 
-        if (setting('app-editor') !== 'markdown') {
+        if (setting()->getForCurrentUser('editor-mode', setting('app-editor')) !== 'markdown') {
             $page->markdown = '';
         }
 
@@ -212,7 +212,7 @@ class PageRepo
     {
         $revision = new PageRevision($page->getAttributes());
 
-        if (setting('app-editor') !== 'markdown') {
+        if (setting()->getForCurrentUser('editor-mode', setting('app-editor')) !== 'markdown') {
             $revision->markdown = '';
         }
 
@@ -249,7 +249,7 @@ class PageRepo
         // Otherwise save the data to a revision
         $draft = $this->getPageRevisionToUpdate($page);
         $draft->fill($input);
-        if (setting('app-editor') !== 'markdown') {
+        if (setting()->getForCurrentUser('editor-mode', setting('app-editor')) !== 'markdown') {
             $draft->markdown = '';
         }
 

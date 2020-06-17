@@ -51,6 +51,19 @@
                         </div>
                     </div>
 
+                    <div class="grid half gap-xl v-center">
+                        <div>
+                            <label for="user-editor-mode" class="setting-list-label">{{ trans('settings.user_editor') }}</label>
+                            <p class="small">{{ trans('settings.user_editor_desc') }}</p>
+                        </div>
+                        <div>
+                            <select name="setting[editor-mode]" id="user-editor-mode">
+                                <option @if(setting()->getUser($user, 'editor-mode', setting('app-editor')) === 'wysiwyg') selected @endif value="wysiwyg">WYSIWYG</option>
+                                <option @if(setting()->getUser($user, 'editor-mode', setting('app-editor')) === 'markdown') selected @endif value="markdown">Markdown</option>
+                            </select>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="text-right">

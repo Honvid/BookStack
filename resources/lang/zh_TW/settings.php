@@ -27,6 +27,8 @@ return [
     'app_secure_images_desc' => '出於效能考量，所有圖片都是公開的。這個選項會在圖片的網址前加入一個隨機並難以猜測的字元串，從而使直接進入變得困難。',
     'app_editor' => '頁面編輯器',
     'app_editor_desc' => '選擇所有使用者將使用哪個編輯器來編輯頁面。',
+    'user_editor' => '頁面編輯器',
+    'user_editor_desc' => '選擇使用哪個編輯器來編輯頁面。',
     'app_custom_html' => '自訂HTML頂端內容',
     'app_custom_html_desc' => '此處加入的任何內容都將插入到每個頁面的<head>部分的底部，這對於覆蓋樣式或加入分析程式碼很方便。',
     'app_custom_html_disabled_notice' => '在此設置頁面上禁用了自定義HTML標題內容，以確保可以恢復所有重大更改。',

@@ -27,6 +27,8 @@ return [
     'app_secure_images_desc' => '出于性能原因，所有图像都是公开的。这个选项会在图像的网址前添加一个随机的，难以猜测的字符串，从而使直接访问变得困难。',
     'app_editor' => '页面编辑器',
     'app_editor_desc' => '选择所有用户将使用哪个编辑器来编辑页面。',
+    'user_editor' => '页面编辑器',
+    'user_editor_desc' => '选择使用哪个编辑器来编辑页面。',
     'app_custom_html' => '自定义HTML头部内容',
     'app_custom_html_desc' => '此处添加的任何内容都将插入到每个页面的<head>部分的底部，这对于覆盖样式或添加分析代码很方便。',
     'app_custom_html_disabled_notice' => '在此设置页面上禁用了自定义HTML标题内容，以确保可以恢复所有重大更改。',

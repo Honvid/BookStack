@@ -3,7 +3,7 @@
      @if(config('services.drawio'))
         drawio-url="{{ is_string(config('services.drawio')) ? config('services.drawio') : 'https://www.draw.io/?embed=1&proto=json&spin=1' }}"
      @endif
-     editor-type="{{ setting('app-editor') }}"
+     editor-type="{{ setting()->getForCurrentUser('editor-mode', setting('app-editor')) }}"
      page-id="{{ $model->id ?? 0 }}"
      text-direction="{{ config('app.rtl') ? 'rtl' : 'ltr' }}"
      page-new-draft="{{ $model->draft ?? 0 }}"
@@ -72,12 +72,12 @@
     <div class="edit-area flex-fill flex">
 
         {{--WYSIWYG Editor--}}
-        @if(setting('app-editor') === 'wysiwyg')
+        @if(setting()->getForCurrentUser('editor-mode', setting('app-editor')) === 'wysiwyg')
             @include('pages.wysiwyg-editor', ['model' => $model])
         @endif
 
         {{--Markdown Editor--}}
-        @if(setting('app-editor') === 'markdown')
+        @if(setting()->getForCurrentUser('editor-mode', setting('app-editor')) === 'markdown')
             @include('pages.markdown-editor', ['model' => $model])
         @endif
 
