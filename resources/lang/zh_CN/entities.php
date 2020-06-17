@@ -68,7 +68,7 @@ return [
     // Shelves
     'shelf' => '书架',
     'shelves' => '书架',
-    'x_shelves' => ':count 书架|:count 书架',
+    'x_shelves' => ':count 书架',
     'shelves_long' => '书架',
     'shelves_empty' => '当前未创建书架',
     'shelves_create' => '创建新书架',
@@ -100,7 +100,7 @@ return [
     // Books
     'book' => '图书',
     'books' => '图书',
-    'x_books' => ':count本书',
+    'x_books' => ':count 本书',
     'books_empty' => '不存在已创建的书',
     'books_popular' => '热门图书',
     'books_recent' => '最近的书',
@@ -139,7 +139,7 @@ return [
     // Chapters
     'chapter' => '章节',
     'chapters' => '章节',
-    'x_chapters' => ':count个章节',
+    'x_chapters' => ':count 个章节',
     'chapters_popular' => '热门章节',
     'chapters_new' => '新章节',
     'chapters_create' => '创建章节',
@@ -162,7 +162,7 @@ return [
     // Pages
     'page' => '页面',
     'pages' => '页面',
-    'x_pages' => ':count个页面',
+    'x_pages' => ':count 个页面',
     'pages_popular' => '热门页面',
     'pages_new' => '新页面',
     'pages_attachments' => '附件',

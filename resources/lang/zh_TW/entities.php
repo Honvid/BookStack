@@ -68,7 +68,7 @@ return [
     // Shelves
     'shelf' => '書架',
     'shelves' => '書架',
-    'x_shelves' => ':架|:章節',
+    'x_shelves' => ':count 书架',
     'shelves_long' => '書架',
     'shelves_empty' => '不存在已建立的書架',
     'shelves_create' => '建立書架',
@@ -100,7 +100,7 @@ return [
     // Books
     'book' => '書本',
     'books' => '書本',
-    'x_books' => ':count本書',
+    'x_books' => ':count 本書',
     'books_empty' => '不存在已建立的書',
     'books_popular' => '熱門書本',
     'books_recent' => '最近的書',
@@ -139,7 +139,7 @@ return [
     // Chapters
     'chapter' => '章節',
     'chapters' => '章節',
-    'x_chapters' => ':count個章節',
+    'x_chapters' => ':count 個章節',
     'chapters_popular' => '熱門章節',
     'chapters_new' => '新章節',
     'chapters_create' => '建立章節',
@@ -162,7 +162,7 @@ return [
     // Pages
     'page' => '頁面',
     'pages' => '頁面',
-    'x_pages' => ':count個頁面',
+    'x_pages' => ':count 個頁面',
     'pages_popular' => '熱門頁面',
     'pages_new' => '新頁面',
     'pages_attachments' => '附件',
